@@ -9,11 +9,11 @@ int main() {
   int digitos[tamanho_digitos]; // vectores en C        | 0 | 1  | 2  | 3 | 4 |
 
   int indice = tamanho_digitos - 1;
-  while (numero / divisor >= 1 && indice >= 0) {
+  while (numero / divisor >= 1 && indice >= 0) { 
     unidad = numero / divisor;
     digitos[indice] = unidad % 10;
     std::cout << digitos[indice] << "\n";
-
+    
     divisor *= 10; // divisor = divisor * 10
     indice--;      // indice = indice -1; //indice -= 1;
   }
