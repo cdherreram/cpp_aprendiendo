@@ -2,9 +2,7 @@
 /*
 FUNCIONES
   tipo_de_dato_que_retorna nombre_de_funcion( argumentos ){
-    
   }
-
 */
 
 // Suma de cuadrados
