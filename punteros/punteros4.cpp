@@ -1,6 +1,6 @@
 #include <iostream>
 
-void sumar_uno(int * n);
+void sumar_uno(int *n);
 
 int main() {
 
@@ -12,6 +12,9 @@ int main() {
   return 0;
 }
 
-void sumar_uno(int *n) {
-  *n = *n + 1;
-}
+void sumar_uno(int *n) { *n = *n + 1; }
+
+// int d[10][10];
+// for i
+//    for j
+//       d[i][j]
