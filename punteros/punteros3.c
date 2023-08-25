@@ -7,7 +7,7 @@ struct fecha {
 };
 
 int main() {
-    int n = 10;
+    int n = 10; // |  |  |  |  |
     char c = '\n';
     float x = 3.14159;
     struct fecha h = { 2012, 2, 29 };

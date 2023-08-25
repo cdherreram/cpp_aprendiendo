@@ -4,7 +4,7 @@
 
 int main() {
 
-  const int N = 5, M = 5;
+  const int N = 4, M = 4;
 
   float matriz[N][M];
 
@@ -22,6 +22,7 @@ int main() {
       suma += 1.0;
       matriz[i][j] = suma;
       std::printf("%p\t\t\t\t", &matriz[i][j]);
+      //std::printf("%f\t\t\t\t", matriz[i][j]);
     }
     std::printf("\n");
   }
