@@ -1,6 +1,8 @@
 #include <cstdio>
+#include <iostream>
+#include <vector>
 
-void sumarUno(int *p, long int n);
+std::vector<int> sumarUno(std::vector<int> p, long int n);
 // | | | | | | | | |
 
 int main() {
@@ -10,9 +12,8 @@ int main() {
     punteros y otro donde no use punteros. Compare el tiempo de ejecución
   */
   const long int N = 100000;
-  int a = 100;
-  int lista[N] = {0}; // |0|0|0|0|0| | |0|5|-|
-  // |1|1|1|1|1| | |1|6|-|
+  std::vector<int> lista(N); // |0|0|0|0|0| | | |a|-|
+  // |1|1|1|1|1| | | |a|-|
 
   for (int i = 0; i < N; i++) {
     lista[i] = i;
@@ -22,7 +23,8 @@ int main() {
   for (int i = 10; i < 20; i++) {
     std::printf("%d: %d\t dir: %p\n", i, lista[i], &lista[i]);
   }
-  sumarUno(lista, N);
+  
+  lista = sumarUno(lista, N);
 
   std::printf("\nDespues de: \n");
   for (int i = 10; i < 20; i++) {
@@ -32,7 +34,7 @@ int main() {
   return 0;
 }
 
-void sumarUno(int *p, long int n) { // 0f55dfe52c0
+std::vector<int> sumarUno(std::vector<int> p, long int n) {
 
   std::printf("\nLas direcciones de memoria dentro de la funcion son: \n");
   for (int i = 10; i < 20; i++) {
@@ -42,4 +44,5 @@ void sumarUno(int *p, long int n) { // 0f55dfe52c0
   for (int i = 0; i < n; ++i) {
     p[i]++;
   }
+  return p;
 }
