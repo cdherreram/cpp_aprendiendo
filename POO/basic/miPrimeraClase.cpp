@@ -1,6 +1,8 @@
 #include <cstdio>
 
 class MiPrimeraClase {
+
+// Atributos
 public:
   int valor1;
   float valor2;
@@ -8,8 +10,12 @@ public:
 private:
   int valor3;
 
+// Métodos
 public:
   void miMetodo();
+
+// Métodos getter y setter
+
 };
 
 void MiPrimeraClase::miMetodo(){

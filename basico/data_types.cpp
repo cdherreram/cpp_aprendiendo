@@ -8,7 +8,14 @@ struct objeto {
   double angulo_inicial;
 };
 
-int main(){
+// Struct - Estructura
+struct biblioteca {
+  std::string libro;
+  std::string revistas;
+  double numBanhos;
+};
+
+int main() {
 
   // int
   // double
@@ -24,7 +31,6 @@ int main(){
   masa_1.pos_x = 1.0;
 
   std::cout << "masa objeto 1: " << masa_1.masa << std::endl;
-  
-  
+
   return 0;
 }
